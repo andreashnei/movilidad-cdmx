@@ -1,0 +1,17 @@
+:root {
+    --text-color: black;
+    --bg-color: white;
+    --accent-color: rgb(255, 145, 0);
+    --font:"map-roman-variable", serif; 
+}
+body {
+    font-family: var(--font);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+a {
+    color: inherit
+    color: var(--accent-color);
+    
+}
