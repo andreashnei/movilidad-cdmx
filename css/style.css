@@ -14,14 +14,35 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+main {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.5;
+
+}
+p, li {
+    max-width: 60ch;
 }
 h1 {
   font-variation-settings: 'wdth' 100;
 }
 h2 {
-  font-variation-settings: 'wdth' 80;
+  font-variation-settings: 'wdth' 70;
 }
+h3 {
+  font-variation-settings: 'wdth' 40;
+}
+
 a {
+    text-decoration: underline;
     color: var(--accent-color);
-    
+}
+a:hover {
+    color: var(--accent-color);
+    text-decoration: none;
 }
