@@ -1,12 +1,15 @@
 :root {
-    --text-color: black;
-    --bg-color: white;
-    --accent-color: rgb(255, 145, 0);
-    --font:"tiffin-latin-variable", sans-serif; 
+    --text-color: white;
+    --bg-color: black;
+    --accent-color:#fff200;
+    --font:"stix-two-text", serif;
+font-weight: 400;
+font-style: normal;variable", sans-serif; 
 }
 
 html {
     font-size: 100%; 
+    scroll-behavior: smooth;
 }
 body {
     font-family: var(--font);
@@ -17,7 +20,7 @@ body {
     font-variation-settings: "wght" 300;
 }
 
-main {
+main, header, footer {
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
@@ -28,18 +31,21 @@ p, li {
     max-width: 60ch;
 }
 h1 {
-  font-variation-settings: 'wdth' 100;
+  font-variation-settings: 'wdth' 900;
 }
 h2 {
-  font-variation-settings: 'wdth' 70;
+  font-variation-settings: 'wdth' 500;
 }
 h3 {
-  font-variation-settings: 'wdth' 40;
+  font-variation-settings: 'wdth' 300;
 }
 
 a {
     text-decoration: underline;
     color: var(--accent-color);
+    font-variation-settings: wdth 300;
+    transition: all 0.6s ease;
+    font-weight: normal;
 }
 a:hover {
     color: var(--accent-color);
