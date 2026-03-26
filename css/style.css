@@ -74,6 +74,7 @@ a:hover {
     padding: 0;
     margin: 0;
     max-width: none;
+    transition: all 0.8s ease;
 }
 
 .hero {
@@ -148,7 +149,8 @@ a:hover {
     color: transparent
 }
 
-.hover main { background-color: transparent;
+.hover main { 
+    background-color: transparent;
 }   
 
 .hover h1 {
