@@ -70,9 +70,10 @@ a:hover {
     width: 100%;
     background-color: var(--accent-color);
     color: var(--bg-color);
-    height: 100dvh;
+    min-height: 100dvh;
     padding: 0;
     margin: 0;
+    max-width: none;
 }
 
 .hero {
@@ -81,15 +82,42 @@ a:hover {
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     padding: 1em;
 }
 
+.hero h1 {
+    transition: all 0.8s ease;
+    order: 3;
+}
+
+.hero p {
+    transition: all 0.8s ease;
+    order: 1;
+}
+
+.hero img {
+    transition: all 0.8s ease;
+    width: 42px;
+    order: 2;
+}
+
 .hero h1 span {
+    transition: all 0.8s ease;
     display: block;
     font-size: 1.5rem;
     font-variation-settings: 'wght' 900, 'wdth' 900;
+}
+
+.hero a {
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 640px) {
+    .hero a {
+        order: 2;
+    }   
 }
 
 .hero h1 span:nth-child(1) {
@@ -110,4 +138,23 @@ a:hover {
 
 .hero h1 span:nth-child(5) {
     text-indent: 70vw;
+}
+
+.hover p {
+    opacity: 0;
+}
+
+.hover p {
+    color: transparent
+}
+
+.hover main { background-color: transparent;
+}   
+
+.hover h1 {
+    color: transparent;
+}
+
+.hover img {
+    opacity: 50%;
 }
