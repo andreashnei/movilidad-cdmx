@@ -1,5 +1,4 @@
-const timelineDataElement = document.querySelector("#videoTimelineData");
-const timelineData = JSON.parse(timelineDataElement.textContent);
+let timelineData;
 
 const refs = {
     video: document.querySelector("#interactiveVideo"),
@@ -250,4 +249,7 @@ refs.video.addEventListener("ended", () => {
     loadVideo(isLastVideo ? 0 : activeVideoIndex + 1, { autoplay: !isLastVideo });
 });
 
-loadVideo(0);
+fetch('./video.json').then(response => response.json()).then(data => {
+    timelineData = data;
+    loadVideo(0);
+});
